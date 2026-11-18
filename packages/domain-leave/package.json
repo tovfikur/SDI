@@ -1,0 +1,17 @@
+{
+  "name": "@jsk/domain-leave",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Leave domain: applications, balances, annual generation (Spec §26)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@jsk/shared-kernel": "*"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "@jsk/e2e-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "End-to-end browser tests (Playwright) against the SPA + API",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@jsk/domain-todos",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Personal daily to-do notes (My Work → My To Do)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@jsk/shared-kernel": "*"
+  }
+}

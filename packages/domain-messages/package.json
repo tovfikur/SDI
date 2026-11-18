@@ -1,0 +1,17 @@
+{
+  "name": "@jsk/domain-messages",
+  "version": "0.1.0",
+  "private": true,
+  "description": "In-app messaging: direct + group conversations, messages, read state",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@jsk/shared-kernel": "*"
+  }
+}

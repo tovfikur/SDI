@@ -1,0 +1,85 @@
+# ── Dependencies ──────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.pnp.cjs
+.yarn/
+.yarnrc.yml
+.pnpm-store/
+
+# ── Build output ──────────────────────────────────────────────
+dist/
+build/
+coverage/
+*.tsbuildinfo
+*.tgz
+*.zip
+apps/web/coverage/
+apps/api/coverage/
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ── Editors / OS ─────────────────────────────────────────────
+.vscode/
+.vscode-server/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+.DS_Store?
+._*
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.~lock.*
+*~
+
+# ── Test artifacts ───────────────────────────────────────────
+playwright-report/
+test-results/
+tests/e2e/test-results/
+coverage/
+.vitest/
+
+
+# ── Runtime / temp ───────────────────────────────────────────
+tmp/
+temp/
+.cache/
+.tmp/
+.pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ── Exclude Mobile App ─────────────────────────────────────────
+apps/mobile/
+*.apk
+*.aab
+phone_*.png
+
+# ── Environment & Secrets ─────────────────────────────────────
+.env
+.env.local
+.env.*.local
+apps/api/.env
+infra/.env
+!.env.example
+!.env.production.example
+
+# ── Infra data ────────────────────────────────────────────────
+infra/data/
+
+

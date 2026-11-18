@@ -1,0 +1,22 @@
+[Unit]
+Description=JSK HRM & PM — Background Worker
+After=network.target postgresql.service redis.service
+
+[Service]
+Type=simple
+User=jsk
+Group=jsk
+WorkingDirectory=/opt/jsk/apps/worker
+EnvironmentFile=/opt/jsk/apps/api/.env
+ExecStart=/usr/bin/node dist/main.js
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=jsk-worker
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

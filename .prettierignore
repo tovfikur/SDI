@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+coverage
+package-lock.json
+IMPLEMENTATION_LOG.md
+IMPLEMENTATION_TODO.md
+JSK_HRM_PM_Architecture_Specification.md

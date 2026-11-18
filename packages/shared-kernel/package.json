@@ -1,0 +1,23 @@
+{
+  "name": "@jsk/shared-kernel",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Common types, error format, pagination/filter contract (Spec §26 / Phase 6)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "test": "npx vitest run",
+    "test:coverage": "npx vitest run --coverage"
+  },
+  "dependencies": {
+    "pg": "^8.13.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.11.10"
+  }
+}

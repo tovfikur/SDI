@@ -1,0 +1,18 @@
+{
+  "name": "@jsk/domain-files",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Storage adapter, upload/scan orchestration (Spec §26)",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc -p tsconfig.json"
+  },
+  "types": "dist/index.d.ts",
+  "dependencies": {
+    "@jsk/shared-kernel": "*",
+    "minio": "^8.0.4"
+  }
+}

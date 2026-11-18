@@ -1,0 +1,18 @@
+{
+  "name": "@jsk/domain-payroll",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Payroll domain: salary components/structures, employee salary history, payroll runs with snapshotted entries, adjustments, payments and payslips",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint src",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx}\"",
+    "typecheck": "tsc --noEmit",
+    "test": "npx vitest run"
+  },
+  "dependencies": {
+    "@jsk/shared-kernel": "*"
+  }
+}
